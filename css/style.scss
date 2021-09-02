@@ -1,0 +1,273 @@
+@import 'font.css';
+
+body {
+    margin: 0;
+}
+
+.top {
+    background-color: #081a52;
+    color: white;
+
+    .h-link {
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .sym-uzb {
+        a {
+            margin-right: 10px;
+            
+            img {
+                height: 24px;
+            }
+        }
+        a:first-child {
+            img {
+                height: 15px;
+            }
+        } 
+    }
+
+    button.dropdown-toggle {
+        background: none;
+        border: none;
+        color: #fff;
+    }
+
+    .social {
+        span {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.header {
+    position: relative;
+    background: url('../img/qmii.jpg') no-repeat center top / cover;
+
+    &::after {
+        content: "";
+        background-color: rgba(0,0,0,.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    ul {
+        position: absolute;
+        z-index: 111;
+        li {
+            display: inline-block;
+
+            &:hover {
+                background-color: #222;
+
+                ul {
+                    display: block;
+                }
+            }
+
+            ul {
+                position: absolute;
+                width: 200px;
+                background-color: #222;
+                display: none;
+                padding: 0;
+
+                li {
+                    display: block;
+                    color: #fff;
+                    padding: 0 15px;
+                    border-left: 5px solid #222;
+                   
+                    &:hover {
+                        background-color: #000;
+                        border-left-color: #fff;
+                    }
+
+                    a {
+
+                    }
+                }
+            }
+
+            a {
+                color: #fff;
+                display: inline-block;
+                text-decoration: none;
+                padding: 10px;
+            }
+        }
+    }
+
+    a.logo {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        white-space: nowrap;
+        display: block;
+        margin: 20px 0;
+
+        img {
+            margin-right: 15px;
+            margin-top: 15px;
+            float: left;
+        }
+    }
+
+    .carousel {
+        .carousel-item {
+            img {
+                width: 70%;
+            }
+
+            .slide-caption {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 30%;
+                height: 100%;
+                background-color: #314573;
+                padding: 20px;
+                color: #fff;
+            }
+        }
+
+        .carousel-control-next {
+            right: 0;
+            top: initial;
+            bottom: 30px;
+        }
+
+        .carousel-control-prev {
+            top: initial;
+            left: initial;
+            right: 50px;
+            bottom: 30px;
+        }
+    }
+
+    .iact-serv {
+        background-color: rgba(52, 62, 85, 0.5);
+        color: #fff;
+        z-index: 999;
+        padding: 0 20px;
+        
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .virtual-reception {
+            border-bottom: 2px solid #fff;
+            background: url(../img/envelope.svg) no-repeat 0 20px / 50px;
+            padding: 20px 0 20px 60px;
+            position: relative;
+
+            a {
+                font-size: 1em;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+
+                    i {
+                        display: flex;
+                    }
+                }
+                
+                i {
+                    font-size: 2em;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            
+        }
+
+        .electron-address {
+            border-bottom: 2px solid #fff;
+            position: relative;
+                text-align: center;
+            padding: 5px 0;
+
+            a {
+                font-size: 1.3em;
+
+                &:hover {
+                    text-decoration: none;
+
+                    i {
+                        display: flex;
+                    }
+                }
+                
+                i {
+                    font-size: 2em;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .online-contract {
+            text-align: center;
+            
+            a {
+                font-size: 1.8em;
+                font-weight: 500;
+            }
+        }
+    }
+    
+}
+
+
+
+.middle {
+    background-color: #ddd;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                padding: 10px;
+                color: #333;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &::after {
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
